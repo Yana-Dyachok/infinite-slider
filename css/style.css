@@ -23,4 +23,17 @@ a:active {
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.img-block {
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=style.css.map */
