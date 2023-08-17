@@ -2,7 +2,7 @@ const slider = document.querySelector('.slider'),
     sliderItems = document.querySelectorAll('.slider-item'),
     prevButton = document.querySelector('.prev-btn'),
     nextButton = document.querySelector('.next-btn'),
-    firstCardWidth = sliderItems[0].offsetWidth;
+    firstCardWidth = (sliderItems[0].offsetWidth)+15;
 console.log(firstCardWidth);
 
 function clickButton(isNext) {
