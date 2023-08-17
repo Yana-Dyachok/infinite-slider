@@ -48,7 +48,7 @@ body {
 
 .slider-item {
   height: 27rem;
-  background-color: antiquewhite;
+  background-color: #fcf2e6;
   list-style: none;
 }
 
@@ -56,4 +56,22 @@ body {
   margin: 1rem;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.arrow-button {
+  font-size: 2rem;
+  width: 3.3rem;
+  height: 3.3rem;
+  border-radius: 50%;
+  color: #fcf2e6;
+  background-color: #9ff4f4;
+  border: 0.25rem solid #fcf2e6;
+  cursor: pointer;
+  transition: all 1s ease-out;
+}
+.arrow-button:hover, .arrow-button:focus {
+  color: #9ff4f4;
+  background-color: #fcf2e6;
+  border: none;
+  transform: scale(1.1);
 }/*# sourceMappingURL=style.css.map */
