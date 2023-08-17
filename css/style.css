@@ -35,8 +35,14 @@ body {
   background-color: #9ff4f4;
 }
 
+main {
+  display: flex;
+  align-items: center;
+}
+
 .container {
   max-width: 102rem;
+  justify-content: center;
 }
 
 .slider {
@@ -44,6 +50,8 @@ body {
   grid-auto-flow: column;
   grid-auto-columns: calc(33.3333333333% - 0.625rem);
   gap: 1rem;
+  overflow: hidden;
+  scroll-behavior: smooth;
 }
 
 .slider-item {
@@ -59,6 +67,7 @@ body {
 }
 
 .arrow-button {
+  margin: 0rem 1rem;
   font-size: 2rem;
   width: 3.3rem;
   height: 3.3rem;
@@ -74,4 +83,21 @@ body {
   background-color: #fcf2e6;
   border: none;
   transform: scale(1.1);
+}
+
+@media screen and (max-width: 1300px) {
+  .container {
+    max-width: 68rem;
+  }
+  .slider {
+    grid-auto-columns: calc(50% - 0.625rem);
+  }
+}
+@media screen and (max-width: 1100px) {
+  .container {
+    max-width: 34rem;
+  }
+  .slider {
+    grid-auto-columns: calc(100% - 0.625rem);
+  }
 }/*# sourceMappingURL=style.css.map */
