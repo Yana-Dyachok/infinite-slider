@@ -28,14 +28,14 @@ a {
     }
 }
 
-$backgroundColor: #9ff4f4;
+$backgroundColor: #7cd9d9;
 $ligthColor: #fcf2e6;
 
 @mixin position {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 html {
@@ -43,42 +43,42 @@ html {
 }
 
 body {
+    min-height: 100vh;
     margin: 0 auto;
     @include position;
-    min-height: 100vh;
+    font-size: 1.25rem;
+    color: $ligthColor;
     background-color: $backgroundColor;
 }
 
 main {
     display: flex;
     align-items: center;
-    padding: 4rem 0rem;
+    padding: 2rem 0rem 6rem;
 }
 
 .container {
+    overflow: hidden;
+    position: relative;
     max-width: 102rem;
-    justify-content: center;
 }
 
 .slider {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: calc((100% / 3) - 0.625rem);
-    gap: 1rem;
-    overflow: hidden;
-    scroll-behavior: smooth;
+    height: 28rem;
+    display: flex;
+    list-style: none;
+    transition: transform 0.5s ease-in-out;
 }
 
 .slider-item {
-    height: 27rem;
-    background-color: $ligthColor;
-    list-style: none;
-    transition: all 0.3s ease-out;
+    flex: 0 0 33.33%;
 }
 
 .img-block {
-    margin: 1rem;
+    padding: 0.9rem;
+    margin-right: 0.7rem;
     object-fit: cover;
+    background-color: $ligthColor;
 }
 
 .arrow-button {
@@ -103,30 +103,35 @@ main {
 }
 
 footer {
-  @include position;
+    @include position;
 }
 
 .author {
-  font-family: 'MonteCarlo', cursive;
-  color: $ligthColor;
+    font-family: 'MonteCarlo', cursive;
+    color: $ligthColor;
 }
 
-@media screen and (max-width: 1300px) {
-  .container {
-    max-width: 68rem;
-}
-  .slider {
-    grid-auto-columns: calc((100% / 2) - 0.625rem);
-}
-  
+@media screen and (max-width: 1400px) {
+    .container {
+        max-width: 68rem;
+    }
+
+    .slider-item {
+        flex: 0 0 50%;
+    }
 }
 
-@media screen and (max-width: 1100px) {
-  .container {
-    max-width: 34rem;
-}
-  .slider {
-    grid-auto-columns: calc((100% / 1) - 0.625rem);
-}
-  
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 34rem;
+    }
+
+    .slider-item {
+        flex: 0 0 100%;
+    }
+
+    .img-block {
+        padding: 1;
+        margin: 0.8rem;
+    }
 }
