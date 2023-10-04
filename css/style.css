@@ -27,46 +27,46 @@ html {
 }
 
 body {
+  min-height: 100vh;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  background-color: #9ff4f4;
+  font-size: 1.25rem;
+  color: #fcf2e6;
+  background-color: #7cd9d9;
 }
 
 main {
   display: flex;
   align-items: center;
-  padding: 4rem 0rem;
+  padding: 2rem 0rem 6rem;
 }
 
 .container {
+  overflow: hidden;
+  position: relative;
   max-width: 102rem;
-  justify-content: center;
 }
 
 .slider {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: calc(33.3333333333% - 0.625rem);
-  gap: 1rem;
-  overflow: hidden;
-  scroll-behavior: smooth;
+  height: 28rem;
+  display: flex;
+  list-style: none;
+  transition: transform 0.5s ease-in-out;
 }
 
 .slider-item {
-  height: 27rem;
-  background-color: #fcf2e6;
-  list-style: none;
-  transition: all 0.3s ease-out;
+  flex: 0 0 33.33%;
 }
 
 .img-block {
-  margin: 1rem;
+  padding: 0.9rem;
+  margin-right: 0.7rem;
   -o-object-fit: cover;
      object-fit: cover;
+  background-color: #fcf2e6;
 }
 
 .arrow-button {
@@ -76,13 +76,13 @@ main {
   height: 3.3rem;
   border-radius: 50%;
   color: #fcf2e6;
-  background-color: #9ff4f4;
+  background-color: #7cd9d9;
   border: 0.25rem solid #fcf2e6;
   cursor: pointer;
   transition: all 1s ease-out;
 }
 .arrow-button:hover, .arrow-button:focus {
-  color: #9ff4f4;
+  color: #7cd9d9;
   background-color: #fcf2e6;
   border: none;
   transform: scale(1.1);
@@ -100,19 +100,23 @@ footer {
   color: #fcf2e6;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1400px) {
   .container {
     max-width: 68rem;
   }
-  .slider {
-    grid-auto-columns: calc(50% - 0.625rem);
+  .slider-item {
+    flex: 0 0 50%;
   }
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1200px) {
   .container {
     max-width: 34rem;
   }
-  .slider {
-    grid-auto-columns: calc(100% - 0.625rem);
+  .slider-item {
+    flex: 0 0 100%;
+  }
+  .img-block {
+    padding: 1;
+    margin: 0.8rem;
   }
 }/*# sourceMappingURL=style.css.map */
