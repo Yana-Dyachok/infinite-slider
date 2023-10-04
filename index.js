@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             slider.style.transition = "none";
             slider.style.transform = `translateX(${-slideWidth * (sliderItems.length)}px)`;
             setTimeout(() => {
-                slider.style.transition = "transform 1s ease-in-out";
+                slider.style.transition = "transform 0.5s ease-in-out";
                 currentIndex = sliderItems.length-amountImg;
                 updateSlider();
             }, 0);
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             slider.style.transition = "none";
             slider.style.transform = `translateX(${slideWidth}px)`;
             setTimeout(() => {
-                slider.style.transition = "transform 1s ease-in-out";
+                slider.style.transition = "transform 0.5s ease-in-out";
                 currentIndex = 0;
                 updateSlider();
             }, 0);
