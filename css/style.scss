@@ -156,6 +156,7 @@ footer {
     .container {
         display: flex;
         max-width:26rem;
+        margin-right: 1rem;
     }
 
     .slider-item {
@@ -176,7 +177,6 @@ footer {
 @media screen and (max-width: 400px) {
     .container {
         max-width:20rem;
-        margin-right: 1rem;
     }
 
     .slider img {
