@@ -135,3 +135,62 @@ footer {
         margin: 0.8rem;
     }
 }
+
+@media screen and (max-width: 700px) {
+    main {
+      display: flex;
+      flex-wrap: wrap-reverse;
+      justify-content: center;
+    }
+
+    .container {
+        order: 2; 
+    }
+
+    .arrow-button {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .container {
+        display: flex;
+        max-width:26rem;
+    }
+
+    .slider-item {
+        flex: 0 0 100%;
+    }
+
+    .img-block {
+        width:  0rem;
+        padding: 0rem;
+        margin-right: 5rem;
+       
+    }
+
+}
+
+
+
+@media screen and (max-width: 400px) {
+    .container {
+        max-width:20rem;
+        margin-right: 1rem;
+    }
+
+    .slider img {
+        width: 25rem;
+        height: 18.75rem;
+    }
+
+    .img-block {
+        margin-right: 5rem;
+       
+    }
+
+    .arrow-button {
+        margin-top: 0rem;
+    }
+
+}
