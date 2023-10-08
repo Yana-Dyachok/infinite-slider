@@ -138,13 +138,13 @@ footer {
 
 @media screen and (max-width: 700px) {
     main {
-      display: flex;
-      flex-wrap: wrap-reverse;
-      justify-content: center;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
     }
 
     .container {
-        order: 2; 
+        order: 2;
     }
 
     .arrow-button {
@@ -153,10 +153,13 @@ footer {
 }
 
 @media screen and (max-width: 530px) {
+    main {
+        padding: 2rem 1rem 4rem;
+    }
+
     .container {
         display: flex;
-        max-width:26rem;
-        margin-right: 1rem;
+        max-width: 26rem;
     }
 
     .slider-item {
@@ -164,19 +167,15 @@ footer {
     }
 
     .img-block {
-        width:  0rem;
+        width: 0rem;
         padding: 0rem;
         margin-right: 5rem;
-       
     }
-
 }
 
-
-
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
     .container {
-        max-width:20rem;
+        max-width: 20rem;
     }
 
     .slider img {
@@ -186,11 +185,9 @@ footer {
 
     .img-block {
         margin-right: 5rem;
-       
     }
 
     .arrow-button {
         margin-top: 0rem;
     }
-
 }
